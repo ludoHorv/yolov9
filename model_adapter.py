@@ -191,9 +191,9 @@ class Adapter(dl.BaseModelAdapter):
                   }
 
         data_yaml_filename = os.path.join(data_path, f'{self.model_entity.dataset_id}.yaml')
-        data = yaml_config.update(params)
+        yaml_config.update(params)
         with open(data_yaml_filename, 'w') as f:
-            yaml.dump(data, f, default_flow_style=False)
+            yaml.dump(yaml_config, f, default_flow_style=False)
 
         faas_callback = kwargs.get('on_epoch_end_callback')
 
