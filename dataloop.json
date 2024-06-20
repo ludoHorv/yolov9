@@ -37,7 +37,7 @@
         "runtime": {
           "podType": "gpu-t4",
           "concurrency": 1,
-          "runnerImage": "ludohor/yolov9-gpu:latest",
+          "runnerImage": "gcr.io/viewo-g/piper/agent/gpu/yolov9:0.0.1",
           "autoscaler": {
             "type": "rabbitmq",
             "minReplicas": 0,
