@@ -10,7 +10,7 @@ RUN pip install --user https://storage.googleapis.com/dtlpy/dev/dtlpy-1.96.6-py3
 
 RUN pip install --user https://storage.googleapis.com/dtlpy/agent/dtlpy_agent-1.96.6.1-py3-none-any.whl
 
-COPY --chown=1000:1000 yolov9 /tmp/app
+COPY --chown=1000:1000 . /tmp/app
 
 WORKDIR /tmp/app
 
